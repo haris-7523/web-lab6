@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<button id="b1" onclick="run()"> Run</button>
+<br>
+<br>
+
+<strong>Result : </strong>
+<br>
+<br>
+<p id="p1"></p>
+
+<script>
+
+
+function run() {
+	
+
+var age=parseInt(prompt('Enter your age: '));
+
+var amount=parseInt(prompt('Enter amount per day you are consuming of your supply: '));
+
+calculateSupply(age,amount);
+
+
+
+
+
+}
+
+function calculateSupply(age, amountPerDay) {
+  var maxAge = 80;
+  var totalNeeded = (amountPerDay * 365) * (maxAge - age);
+  var message = 'You will need ' + totalNeeded + ' to last you until the ripe old age of ' + maxAge;
+  document.getElementById("p1").innerHTML =message;
+};
+
+</script>
+
+</body>
+
+</html>

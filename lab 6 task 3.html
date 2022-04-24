@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<button id="b1" onclick="run()"> Run</button>
+<br>
+<br>
+
+<strong>Result : </strong>
+<br>
+<br>
+<p id="p1"></p>
+<br>
+<p id="p2"></p>
+
+<script>
+
+
+function run() {
+	
+
+var age=parseInt(prompt('Enter your age: '));
+
+(age>=18) ? document.getElementById("p1").innerHTML ="Your are eligible to drive." : document.getElementById("p1").innerHTML ="Your are not eligible to drive.";
+
+};
+
+</script>
+
+</body>
+
+</html>

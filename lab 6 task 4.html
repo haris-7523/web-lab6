@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<button id="b1" onclick="run()"> Run</button>
+<br>
+<br>
+
+<strong>Choice your broswer<br><br>Enter 1 for Chrome<br><br>Enter 2 for Safari<br><br>Enter 3 for Mozilla Firefox<br><br>Enter 4 for Internet Explorer<br><br>Enter 0 if your broswer is not listed here<br><br> </strong>
+<strong>Result : </strong>
+
+<p id="p1"></p>
+<br>
+<p id="p2"></p>
+
+<script>
+
+
+function run() {
+	
+
+var choice=prompt('Enter your choice in number: ');
+
+switch(choice) {
+  case '1':
+    document.getElementById("p1").innerHTML +='<br>I am using Chrome.';
+    break;
+  case '2':
+    
+    document.getElementById("p1").innerHTML +='<br>I am using Safari.';
+    break;
+
+  case '3':
+    
+    document.getElementById("p1").innerHTML +='<br>I am using Mozilla Firefox.';
+    break;
+
+  case '4':
+    
+    document.getElementById("p1").innerHTML +='<br>I am using Internet Explorer.';
+    break;
+  default:
+    
+    document.getElementById("p1").innerHTML +='<br>The broswer i am using is not listed here.';
+}
+
+
+};
+
+</script>
+
+</body>
+
+</html>

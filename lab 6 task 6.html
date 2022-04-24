@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<button id="b1" onclick="run()"> Run</button>
+<br>
+<br>
+
+<strong>Result : </strong>
+<br>
+<br>
+<p id="p1"></p>
+
+
+<script>
+
+
+function run() {
+	
+
+var recipe = {
+    Title : 'Brownies',
+    Serves : 10,
+    Ingredients : ['self raising flour', 'cocoa', 'eggs', 'butter', 'choc chunks', 'sugar']
+};
+
+Recipe(recipe);
+
+
+}
+
+function Recipe(recipe)
+{
+	console.log(recipe.Title);
+	document.getElementById("p1").innerHTML +='Title : ';
+document.getElementById("p1").innerHTML +=recipe.Title+'<br><br>';
+console.log("Serves: " + recipe.Serves);
+	document.getElementById("p1").innerHTML +='Serves : ';
+document.getElementById("p1").innerHTML +=recipe.Serves+'<br><br>';
+
+
+console.log("Ingredients: ");
+
+
+	document.getElementById("p1").innerHTML +='Ingredients : <br><br>';
+for ( var i = 0; i < recipe.Ingredients.length; i++ ){
+
+    console.log(recipe.Ingredients[i]);
+    document.getElementById("p1").innerHTML +=recipe.Ingredients[i]+'<br><br>';
+
+}
+}
+
+</script>
+
+</body>
+
+</html>

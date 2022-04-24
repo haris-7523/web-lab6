@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<button id="b1" onclick="run()"> Run</button>
+<br>
+<br>
+
+
+<strong>Result : </strong>
+
+<p id="p1"></p>
+<br>
+<p id="p2"></p>
+
+<script>
+
+
+function run() {
+	const nums = new Array();
+	var loop=parseInt(prompt('Enter total length of array'));
+
+	for (var i = 0 ; i < loop; i++) {
+		nums[i]=parseInt(prompt('Enter an integer values for array'));
+	}
+
+	  document.getElementById("p1").innerHTML +='<strong>Array Values : </strong><br><br>';
+	
+		for (var i = 0 ; i < loop; i++) {
+		  document.getElementById("p1").innerHTML +=' '+nums[i];
+	}
+    
+	 const target=parseInt(prompt('Enter target value'));
+
+        var a=0;
+        var b=0;
+document.getElementById("p2").innerHTML +='<strong>Values whose sum is equal to the target value : </strong><br><br>';
+
+    for(let i=0;i<nums.length;i++) 
+  
+   { 
+
+  
+  
+   for(let j=i+1;j<nums.length;j++) 
+  
+    { 
+
+  
+         if(nums[i]+nums[j]==target) 
+  
+          { 
+            a=nums[i]; 
+            b=nums[j]; 
+             
+             document.getElementById("p2").innerHTML += a+' + '+b+' = '+target+'<br>';
+
+  
+           } 
+  
+  
+    } 
+
+
+} 
+
+
+};
+
+</script>
+
+</body>
+
+</html>
